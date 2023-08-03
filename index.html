@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+.container{
+  padding: 85px 0;
+  margin: 0 auto;
+  width: 1120px;
+}
+
+h1{
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 64px;
+  color: #8D8D8E;
+}
+
+.gallery_wrap{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+}
+
+.image_1 { 
+  background-image: url('https://img.freepik.com/free-photo/two-green-smoothies-with-cucumber_23-2147684369.jpg?w=360&t=st=1690387415~exp=1690388015~hmac=dc95c7f70e8f926462f842cfc465c706df0ebe85f784b0fc662e94c13b5c8815');
+}
+
+.image_2 { 
+  background-image: url('https://img.freepik.com/free-photo/top-view-tasty-breakfast-with-organic-fruits_23-2148531814.jpg?w=826&t=st=1690386792~exp=1690387392~hmac=c59c138086dc8f95018e580fa39205fef4578a324d3fdf7fec3ec07228bfe6bc');
+}
+
+.image_3 { 
+  background-image: url('https://img.freepik.com/free-photo/yogurt-with-berries-muesli-breakfast-bowl-blue-background_123827-23220.jpg?w=826&t=st=1690386504~exp=1690387104~hmac=0c02effd32fd7874cd134d3558e7128f50c98862dc4a2f95e0b80cd03b6ed515');
+}
+
+.image_4 { 
+  background-image: url('https://img.freepik.com/premium-photo/sliced-watermelon-big-green-plate-white-background_101125-255.jpg?w=360');
+}
+
+.image_5 { 
+  background-image: url('https://img.freepik.com/free-photo/hot-coffee-mug_1323-163.jpg?w=826&t=st=1690387024~exp=1690387624~hmac=2971ed4bebf41a605b0207e0ea99fc6e10b22c5bdc324be57fb476a704b255f8');
+}
+
+.image {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  transition: flex 0.8s ease;
+  
+  &:hover{
+    flex: 7;
+  }
+}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+  <h1>Gallery</h1>
+
+  <div class="gallery_wrap">
+    <div class="image image_1"></div>
+    <div class="image image_2"></div>
+    <div class="image image_3"></div>
+    <div class="image image_4"></div>
+    <div class="image image_5"></div>
+  </div>
+ </div>
+</body>
+</html>
